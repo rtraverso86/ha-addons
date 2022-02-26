@@ -104,7 +104,7 @@ jobs:
         if: steps.check.outputs.build_arch == 'true' && ${{ matrix.addon }} == 'piresence'
         uses: dawidd6/action-download-artifact@v2
         with:
-          repo: https://github.com/rtraverso86/ha-addon-piresence
+          repo: 'https://github.com/rtraverso86/ha-addon-piresence'
           github_token: ${{secrets.GITHUB_TOKEN}}
           workflow: build.yaml
           branch: master

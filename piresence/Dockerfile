@@ -10,4 +10,3 @@ RUN \
 
 # Copy root filesystem
 COPY rootfs /
-

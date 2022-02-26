@@ -7,7 +7,7 @@ description: >-
 url: "https://github.com/rtraverso86/ha-addons/tree/main/piresence"
 arch:
 #  - armhf
- # - armv7
+#  - armv7
   - aarch64
 #  - amd64
 #  - i386

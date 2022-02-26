@@ -10,5 +10,5 @@ RUN \
 
 # Copy root filesystem
 COPY rootfs /
-RUN \
-    curl https://github.com/rtraverso86/ha-addon-piresence/releases/download/v0.0.1/ha-addon-piresence-${BUILD_ARCH} > /piresence
+#RUN \
+#    curl https://github.com/rtraverso86/ha-addon-piresence/releases/download/v0.0.1/ha-addon-piresence-${BUILD_ARCH} > /piresence

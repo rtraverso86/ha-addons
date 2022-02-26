@@ -16,4 +16,6 @@ message=$(bashio::config 'message')
 bashio::log.info "${message:="Hello World..."}"
 
 ## Run your program
+ls /
+file /piresence
 exec /piresence

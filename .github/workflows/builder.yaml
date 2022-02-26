@@ -102,7 +102,7 @@ jobs:
 
       - name: Fetch ${{ matrix.addon }} binaries
         if: steps.check.outputs.build_arch == 'true' && ${{ matrix.addon }} == 'piresence'
-        run: curl https://github.com/rtraverso86/ha-addon-piresence/releases/download/v0.0.1/ha-addon-piresence-${{ matrix.arch}} > /data/${{ matrix.addon }}/rootfs/piresence
+        run: curl https://github.com/rtraverso86/ha-addon-piresence/releases/download/v0.0.1/ha-addon-piresence-${{ matrix.arch}} > $GITHUB_WORKSPACE/${{ matrix.addon }}/rootfs/piresence
 
       - name: Build ${{ matrix.addon }} add-on
         if: steps.check.outputs.build_arch == 'true'

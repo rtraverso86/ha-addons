@@ -1,14 +1,22 @@
-# Example Home Assistant add-on repository
+# rtraverso86's Home Assistant Add-Ons
 
-This repository can be used as a "blueprint" for add-on development to help you get started.
+[![Open your Home Assistant instance and show the add add-on repository dialog with a specific repository URL pre-filled.](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Frtraverso86%2Fha-addons)
 
 Add-on documentation: <https://developers.home-assistant.io/docs/add-ons>
 
-[![Open your Home Assistant instance and show the add add-on repository dialog with a specific repository URL pre-filled.](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fhome-assistant%2Faddons-example)
-
 ## Add-ons
 
-This repository contains the following add-ons
+This repository contains the following add-ons.
+
+### [PiRESENCE](./piresence)
+
+![Supports aarch64 Architecture][aarch64-shield]
+![Supports amd64 Architecture][amd64-shield-no]
+![Supports armhf Architecture][armhf-shield-no]
+![Supports armv7 Architecture][armv7-shield-no]
+![Supports i386 Architecture][i386-shield-no]
+
+_Presence Detection based on PIR sensors and knowledge of the topology of your home._
 
 ### [Example add-on](./example)
 
@@ -43,3 +51,8 @@ Notes to developers after forking or using the github template feature:
 [armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
 [armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
 [i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
+[aarch64-shield-no]: https://img.shields.io/badge/aarch64-no-red.svg
+[amd64-shield-no]: https://img.shields.io/badge/amd64-no-red.svg
+[armhf-shield-no]: https://img.shields.io/badge/armhf-no-red.svg
+[armv7-shield-no]: https://img.shields.io/badge/armv7-no-red.svg
+[i386-shield-no]: https://img.shields.io/badge/i386-no-red.svg

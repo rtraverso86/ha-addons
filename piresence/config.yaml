@@ -1,0 +1,19 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
+name: PiRESENCE
+version: "0.0.1"
+slug: piresence
+description: >-
+  Presence Detection based on PIR sensors and knowledge of the topology of your home.
+url: "https://github.com/rtraverso86/ha-addons/tree/main/piresence"
+arch:
+#  - armhf
+ # - armv7
+  - aarch64
+#  - amd64
+#  - i386
+init: false
+options:
+  message: "Hello world..."
+schema:
+  message: "str?"
+#image: "ghcr.io/home-assistant/{arch}-addon-example"

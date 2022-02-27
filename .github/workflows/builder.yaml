@@ -111,9 +111,11 @@ jobs:
           search_artifacts: true
           name: ${{ matrix.arch }}-ha-addon-piresence
           path: ${{ matrix.addon }}/rootfs/piresence
-        #run: |
-        #  curl -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN}}" \
-        #    https://github.com/rtraverso86/ha-addon-piresence/releases/download/v0.0.1/ha-addon-piresence-${{ matrix.arch}} > $GITHUB_WORKSPACE/${{ matrix.addon }}/rootfs/piresence
+
+      - name: Set executable flags
+        if: steps.check.outputs.build_arch == 'true' && matrix.addon == 'piresence'
+        run: |
+          chmod 755 ${{matrix.addon}}/rootfs/piresence/ha-addon-piresence
 
       - name: Build ${{ matrix.addon }} add-on
         if: steps.check.outputs.build_arch == 'true'

@@ -101,7 +101,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Fetch ${{ matrix.addon }} artifacts
-        if: steps.check.outputs.build_arch == 'true' && ${{ matrix.addon }} == 'piresence'
+        if: steps.check.outputs.build_arch == 'true' && matrix.addon == 'piresence'
         uses: dawidd6/action-download-artifact@v2
         with:
           repo: rtraverso86/ha-addon-piresence

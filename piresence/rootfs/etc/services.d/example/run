@@ -18,7 +18,7 @@ bashio::log.info "${message:="Hello World..."}"
 ## Run your program
 ls /
 file /piresence
+
 dest=/ha-addon-piresence
 bashio::log.info "Executing $dest"
-
 exec "$dest"

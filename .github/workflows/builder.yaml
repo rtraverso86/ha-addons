@@ -110,7 +110,7 @@ jobs:
           check_artifacts: true
           search_artifacts: true
           name: ${{ matrix.arch }}-ha-addon-piresence
-          path: $GITHUB_WORKSPACE/${{ matrix.addon }}/rootfs/piresence
+          path: ${{ matrix.addon }}/rootfs/piresence
         #run: |
         #  curl -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN}}" \
         #    https://github.com/rtraverso86/ha-addon-piresence/releases/download/v0.0.1/ha-addon-piresence-${{ matrix.arch}} > $GITHUB_WORKSPACE/${{ matrix.addon }}/rootfs/piresence

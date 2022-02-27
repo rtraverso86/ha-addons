@@ -105,10 +105,10 @@ jobs:
         uses: dawidd6/action-download-artifact@v2
         with:
           repo: rtraverso86/ha-addon-piresence
-          github_token: ${{secrets.GITHUB_TOKEN}}
+          github_token: ${{secrets.HA_ADDON_PIRESENCE_TOKEN}}
           workflow: build.yaml
-          branch: master
           check_artifacts: true
+          search_artifacts: true
           name: ${{ matrix.arch }}-ha-addon-piresence
           path: $GITHUB_WORKSPACE/${{ matrix.addon }}/rootfs/piresence
         #run: |

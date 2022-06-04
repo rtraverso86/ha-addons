@@ -105,7 +105,6 @@ jobs:
         uses: dawidd6/action-download-artifact@v2
         with:
           repo: rtraverso86/ha-addon-piresence
-          github_token: ${{secrets.HA_ADDON_PIRESENCE_TOKEN}}
           workflow: build.yaml
           check_artifacts: true
           search_artifacts: true
